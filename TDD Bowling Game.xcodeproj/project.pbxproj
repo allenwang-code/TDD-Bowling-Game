@@ -14,6 +14,7 @@
 		DDA708BD1EE5305A000DC8BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA708BB1EE5305A000DC8BA /* LaunchScreen.storyboard */; };
 		DDA708C81EE5305B000DC8BA /* TDD_Bowling_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA708C71EE5305B000DC8BA /* TDD_Bowling_GameTests.swift */; };
 		DDA708D31EE5305B000DC8BA /* TDD_Bowling_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA708D21EE5305B000DC8BA /* TDD_Bowling_GameUITests.swift */; };
+		DDA708E11EE531EA000DC8BA /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA708E01EE531EA000DC8BA /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		DDA708CE1EE5305B000DC8BA /* TDD Bowling GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TDD Bowling GameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA708D21EE5305B000DC8BA /* TDD_Bowling_GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDD_Bowling_GameUITests.swift; sourceTree = "<group>"; };
 		DDA708D41EE5305B000DC8BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDA708E01EE531EA000DC8BA /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				DDA708B91EE5305A000DC8BA /* Assets.xcassets */,
 				DDA708BB1EE5305A000DC8BA /* LaunchScreen.storyboard */,
 				DDA708BE1EE5305A000DC8BA /* Info.plist */,
+				DDA708E01EE531EA000DC8BA /* Game.swift */,
 			);
 			path = "TDD Bowling Game";
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDA708B51EE5305A000DC8BA /* ViewController.swift in Sources */,
+				DDA708E11EE531EA000DC8BA /* Game.swift in Sources */,
 				DDA708B31EE5305A000DC8BA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
