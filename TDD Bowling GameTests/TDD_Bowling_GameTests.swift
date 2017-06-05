@@ -10,21 +10,23 @@ import XCTest
 @testable import TDD_Bowling_Game
 
 class TDD_Bowling_GameTests: XCTestCase {
-    
+    let game = Game()
+
     public func testGutterGame() {
-        let game = Game()
-        for i in 0...20 {
-            game.roll(pins: 0)
-            XCTAssertEqual(0, game.getScore())
-        }
+        self.rolling(of: 1)
+        XCTAssertEqual(20, game.getScore())
     }
 
     public func testAllOnes() {
-        let game = Game()
-        for i in 0..<20 {
-            print(i)
-            game.roll(pins: 1)
-        }
+        self.rolling(of: 1)
         XCTAssertEqual(20, game.getScore())
     }
+    
+    private func rolling(of pins: Int) {
+        for _ in 1...20 {
+            game.roll(pins: pins)
+        }
+    }
+
+
 }
