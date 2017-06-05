@@ -13,17 +13,17 @@ class TDD_Bowling_GameTests: XCTestCase {
     let game = Game()
 
     public func testGutterGame() {
-        self.rolling(of: 1)
+        self.rolling(times: 20, of: 1)
         XCTAssertEqual(20, game.getScore())
     }
 
     public func testAllOnes() {
-        self.rolling(of: 1)
+        self.rolling(times: 20, of: 1)
         XCTAssertEqual(20, game.getScore())
     }
     
-    private func rolling(of pins: Int) {
-        for _ in 1...20 {
+    private func rolling(times: Int, of pins: Int) {
+        for _ in 1...times {
             game.roll(pins: pins)
         }
     }
