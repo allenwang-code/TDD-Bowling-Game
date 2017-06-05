@@ -15,8 +15,15 @@ class TDD_Bowling_GameTests: XCTestCase {
         let game = Game()
         for i in 0...20 {
             game.roll(pins: 0)
-            XCTAssertEqual(0, game.score())
+            XCTAssertEqual(0, game.getScore())
         }
     }
 
+    public func testAllOnes() {
+        let game = Game()
+        for _ in 0...20 {
+            game.roll(pins: 1)
+            XCTAssertEqual(20, game.getScore())
+        }
+    }
 }
